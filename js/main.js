@@ -3,17 +3,12 @@ async function showProducts() {
     const products = await API.json();
     const productsContainer = document.querySelector('.produtos__container'); // Correct class name
 
-    try {
-        if (productsContainer) {
-            products.forEach(product => {
-                addProductCard(product.image, product.name, productsContainer);
-            });
-        } else {
-            throw new Error('Products container not found');
-        }
-    }
-    catch (error) {
-        console.error(error);
+    if (productsContainer) {
+        products.forEach(product => {
+            addProductCard(product.image, product.name, productsContainer);
+        });
+    } else {
+        console.error('Products container not found');
     }
 }
 
