@@ -6,13 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/principal_style.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="cabecalho__logo">
         <img src="assets/Logo.svg" alt="Logo do challenge AluraGeek">
     </header>
+
+    <main class="principal">
+        <section class="secao__produtos">
+            <h1 class="secao__titulo">Meus produtos:</h1>
+            <div class="produtos__container">
+                <div class="produto__card">
+                    <img src="assets/produto1.jpg" alt="Produto 1">
+                    <h2>Produto 1</h2>
+                    <p>Descrição do produto 1.</p>
+                </div>
+                <div class="produto__card">
+                    <img src="assets/produto2.jpg" alt="Produto 2">
+                    <h2>Produto 2</h2>
+                    <p>Descrição do produto 2.</p>
+                </div>
+                <div class="produto__card">
+                    <img src="assets/produto3.jpg" alt="Produto 3">
+                    <h2>Produto 3</h2>
+                    <p>Descrição do produto 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao__adicionar">
+            <h1 class="secao__titulo">Adicionar Produto</h1>
+            <form action="">
+                <div>
+                    <label for="productName">Nome do Produto:</label>
+                    <input type="text" id="productName" name="productName">
+                </div>
+                <div>
+                    <label for="productPrice">Valor do Produto:</label>
+                    <input type="text" id="productPrice" name="productPrice">
+                </div>
+                <div>
+                    <label for="productImage">URL da Imagem:</label>
+                    <input type="text" id="productImage" name="productImage">
+                </div>
+                <div>
+                    <button type="submit" id="button__keep">Guardar</button>
+                    <button type="reset" id="button__clear">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
