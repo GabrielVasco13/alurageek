@@ -24,4 +24,4 @@ function addProductCard(imageSrc, productName, container) {
     container.appendChild(productCard);
 }
 
-document.addEventListener('DOMContentLoaded', showProducts);
+window.onload = showProducts;

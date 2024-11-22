@@ -46,14 +46,15 @@ form {
 }
 
 .produto__item {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 150px;
     border-radius: 10px;
 }
 
 .produto__card h2 {
     font-size: 14px;
     margin: 10px 0;
+    color: white;
 }
 
 .produto__delete {
