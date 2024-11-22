@@ -42,9 +42,10 @@ form {
     border-radius: 8px;
     padding: 10px;
     width: 150px;
+    background-color: #5D04D9;
 }
 
-.produto__card img {
+.produto__item {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -55,10 +56,17 @@ form {
     margin: 10px 0;
 }
 
-.produto__card p {
-    font-size: 12px;
-    color: #666;
+.produto__delete {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 110px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 form {
     max-width: 400px;
