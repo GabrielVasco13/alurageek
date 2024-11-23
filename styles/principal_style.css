@@ -5,6 +5,9 @@
     justify-content: center;
     gap: 80px;
     min-height: 80vh;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .secao__produtos,
@@ -79,49 +82,71 @@ form {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
 }
 
 form div {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
+    color: #333;
 }
 
 form input[type="text"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eaeaea;
+    box-shadow: inset 2px 2px 5px #d1d1d1, inset -2px -2px 5px #ffffff;
+    font-size: 14px;
     box-sizing: border-box;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 4px #0056b3;
+}
+
+#button__keep,
+#button__clear {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 #button__keep {
-    padding: 10px 20px;
-    height: 40px;
-    border: 1px solid #03318C;
-    border-radius: 5px;
     background-color: #03318C;
     color: white;
-    cursor: pointer;
+    box-shadow: 2px 2px 3px #022365, -2px -2px 3px #0440b6;
 }
 
 #button__clear {
-    padding: 10px 20px;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     background-color: white;
     color: black;
-    cursor: pointer;
+    box-shadow: 2px 2px 3px #d1d1d1, -2px -2px 3px #ffffff;
 }
 
-form button:hover {
-    background-color: #0056b3;
+#button__keep:hover,
+#button__clear:hover {
+    transform: scale(1.05);
+}
+
+#button__keep:active,
+#button__clear:active {
+    transform: scale(0.98);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
