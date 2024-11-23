@@ -1,40 +1,40 @@
 {
   "products": [
     {
-      "name": "Darth Vader",
-      "price": "50",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_975969-MLA46467090682_062021-O.webp",
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "price": "60",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/0/0f/Legend_of_Zelda_Breath_of_the_Wild_capa.png",
       "id": "1"
     },
     {
-      "name": "Flash",
-      "price": "25",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp",
+      "name": "Elden Ring",
+      "price": "70",
+      "image": "https://store-images.s-microsoft.com/image/apps.25322.14537704372270848.6ecb6038-5426-409a-8660-158d1eb64fb0.d230176a-d7a2-4696-ad23-ff53a6e004df",
       "id": "2"
     },
     {
-      "name": "Batman",
-      "price": "35",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_640262-MCO47330060660_092021-O.webp",
+      "name": "God of War: Ragnarok",
+      "price": "75",
+      "image": "https://cdn.awsli.com.br/600x450/1370/1370704/produto/146290938/6494b8be77.jpg",
       "id": "3"
     },
     {
-      "name": "Hulk",
-      "price": "45",
-      "image": "https://m.media-amazon.com/images/I/516X0YLRV+L._AC_SY879_.jpg",
+      "name": "Hollow Knight",
+      "price": "15",
+      "image": "https://cdn.awsli.com.br/2500x2500/53/53761/produto/39324478/0aac8c1822.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Minecraft",
+      "price": "25",
+      "image": "https://play-lh.googleusercontent.com/27O5tpaYE82W6m30rJ_MX3-UvshlDM6O8oXDxb6GseYW2T7P8UNT19727MGmz-0q3w",
       "id": "5"
     },
     {
-      "name": "Spider Man",
-      "price": "20",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_620343-MLA45333647274_032021-O.webp",
-      "id": "6"
-    },
-    {
-      "name": "Capitão America",
+      "name": "Cyberpunk 2077",
       "price": "50",
-      "image": "https://m.media-amazon.com/images/I/51aqEMfw9KL._AC_SY879_.jpg",
-      "id": "7"
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202008/0416/6Bo40lnWU0BhgrOUm7Cb6by3.png?w=440",
+      "id": "6"
     }
   ]
 }
