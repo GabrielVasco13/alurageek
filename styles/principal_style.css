@@ -82,9 +82,6 @@ form {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
 }
 
 form div {
@@ -136,7 +133,7 @@ form input[type="text"]:focus {
 
 #button__clear {
     background-color: white;
-    color: black;
+    color: #03318C;
     box-shadow: 2px 2px 3px #d1d1d1, -2px -2px 3px #ffffff;
 }
 
