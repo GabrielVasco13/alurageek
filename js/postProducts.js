@@ -17,8 +17,7 @@ async function postProduct() {
                 body: JSON.stringify(newProduct)
             });
             if (API.ok) {
-                alert('Produto adicionado com sucesso');
-                showProducts(); // Call showProducts to refresh the product list
+                showProducts();
             } else {
                 alert('Erro ao adicionar produto');
             }
