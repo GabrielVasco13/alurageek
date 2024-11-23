@@ -5,9 +5,12 @@ async function postProduct() {
     if (form) {
         form.addEventListener('submit', async e => {
             e.preventDefault();
-            const name = document.querySelector('.form__name').value;
-            const price = document.querySelector('.form__price').value;
-            const image = document.querySelector('.form__image').value;
+            const nameField = document.querySelector('.form__name');
+            const priceField = document.querySelector('.form__price');
+            const imageField = document.querySelector('.form__image');
+            const name = nameField.value;
+            const price = priceField.value;
+            const image = imageField.value;
             const newProduct = { name, price, image };
             const API = await fetch('https://67414bf7e4647499008d4cba.mockapi.io/api/v1/products', {
                 method: 'POST',
@@ -18,6 +21,9 @@ async function postProduct() {
             });
             if (API.ok) {
                 showProducts();
+                nameField.value = '';
+                priceField.value = '';
+                imageField.value = '';
             } else {
                 alert('Erro ao adicionar produto');
             }
