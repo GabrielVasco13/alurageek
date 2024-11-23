@@ -1,6 +1,6 @@
 export async function fetchProducts() {
     try {
-        const response = await fetch('https://api.jsonbin.io/v3/b/674151c9e41b4d34e45905ba');
+        const response = await fetch('https://67414bf7e4647499008d4cba.mockapi.io/api/v1/products');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

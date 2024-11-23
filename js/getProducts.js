@@ -1,7 +1,7 @@
 import { deleteProduct } from './deleteProducts.js';
 
 export async function showProducts() {
-    const API = await fetch('http://localhost:3000/products');
+    const API = await fetch('https://67414bf7e4647499008d4cba.mockapi.io/api/v1/products');
     const products = await API.json();
     const productsContainer = document.querySelector('.produtos__container');
     if (productsContainer) {

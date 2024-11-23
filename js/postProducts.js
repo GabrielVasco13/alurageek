@@ -9,7 +9,7 @@ async function postProduct() {
             const price = document.querySelector('.form__price').value;
             const image = document.querySelector('.form__image').value;
             const newProduct = { name, price, image };
-            const API = await fetch('http://localhost:3000/products', {
+            const API = await fetch('https://67414bf7e4647499008d4cba.mockapi.io/api/v1/products', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
