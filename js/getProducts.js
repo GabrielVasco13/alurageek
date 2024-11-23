@@ -1,4 +1,4 @@
-async function showProducts() {
+export async function showProducts() {
     const API = await fetch('http://localhost:3000/products');
     const products = await API.json();
     const productsContainer = document.querySelector('.produtos__container');
@@ -27,3 +27,4 @@ function addProductCard(imageSrc, productName, productPrice, container) {
 }
 
 window.onload = showProducts;
+

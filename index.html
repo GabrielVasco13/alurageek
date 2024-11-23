@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
-    <script src="js/main.js"></script>
+    <script src="js/postProducts.js" type="module" defer></script>
+    <script src="js/getProducts.js" type="module" defer></script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/footer_style.css">
     <link rel="stylesheet" href="styles/principal_style.css">
@@ -26,24 +27,23 @@
         <section class="secao__produtos">
             <h1 class="secao__titulo">Meus produtos:</h1>
             <div class="produtos__container" id="produtos_container">
-
             </div>
         </section>
 
         <section class="secao__adicionar">
             <h1 class="secao__titulo">Adicionar Produto</h1>
-            <form>
+            <form class="form">
                 <div>
                     <label for="productName">Nome do Produto:</label>
-                    <input type="text" id="productName" name="productName">
+                    <input type="text" class="form__name" name="productName">
                 </div>
                 <div>
                     <label for="productPrice">Valor do Produto:</label>
-                    <input type="text" id="productPrice" name="productPrice">
+                    <input type="text" class="form__price" name="productPrice">
                 </div>
                 <div>
                     <label for="productImage">URL da Imagem:</label>
-                    <input type="text" id="productImage" name="productImage">
+                    <input type="text" class="form__image" name="productImage">
                 </div>
                 <div>
                     <button type="submit" id="button__keep">Guardar</button>
